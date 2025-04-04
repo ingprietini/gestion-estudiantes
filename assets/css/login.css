@@ -1,0 +1,117 @@
+/* styles.css */
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f7f6; /* Light green background */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form h1 {
+    color: #2c3e50; /* Dark blue heading */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form h2 {
+    color: #3498db; /* Blue subheading */
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.5em;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.alert-error {
+    background-color: #e74c3c; /* Red error background */
+    color: white;
+    border: 1px solid #c0392b;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #7f8c8d; /* Gray label text */
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #d1d8e0;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+    outline: none;
+    border-color: #3498db; /* Blue focus border */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #27ae60; /* Green primary button */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #219653; /* Darker green on hover */
+}
+
+.login-footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #95a5a6; /* Light gray footer text */
+    font-size: 0.9em;
+}
+
+.login-footer a {
+    color: #3498db; /* Blue link color */
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .login-container {
+        margin: 20px;
+        padding: 20px;
+    }
+}

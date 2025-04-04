@@ -1,0 +1,149 @@
+/* Estilos generales */
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cabecera */
+header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navegación */
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  background-color: rgba(255, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+/* Tarjetas */
+.card {
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.card-header {
+  background-color: rgba(0, 0, 0, 0.02);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 1rem 1.25rem;
+}
+
+/* Botones */
+.btn {
+  border-radius: 0.25rem;
+  font-weight: 500;
+}
+
+/* Tablas */
+.table {
+  margin-bottom: 0;
+}
+
+.table th {
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.table tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Footer */
+footer {
+  background-color: #4267b2;
+  color: white;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+/* Utilidades */
+.icon-sm {
+  width: 16px;
+  height: 16px;
+}
+
+/* Estilos para dashboard */
+.dashboard-card {
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Clases para calificaciones */
+.calificacion-aprobada {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.calificacion-reprobada {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+/* Estilos para filtros */
+.filtros-container {
+  background-color: #f3f4f5;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Responsive para tablas */
+@media (max-width: 767.98px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+}
+
+/* Personalización para gráficos */
+.chart-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+/* Animaciones */
+.fade-in {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Indicadores de estado */
+.estado-badge {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+.estado-aprobado {
+  background-color: #28a745;
+}
+
+.estado-reprobado {
+  background-color: #dc3545;
+}
+
+  
